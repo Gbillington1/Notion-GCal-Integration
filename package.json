@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Notion x Google Calendar Integration for getting deadline due times from next class period in Google Calendar",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
