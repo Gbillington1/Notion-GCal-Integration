@@ -1,0 +1,28 @@
+{
+  "name": "notion-gcal-integration",
+  "version": "1.0.0",
+  "description": "Notion x Google Calendar Integration for getting deadline due times from next class period in Google Calendar",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gbillington1/Notion-GCal-Integration.git"
+  },
+  "keywords": [
+    "Notion",
+    "Google",
+    "Calendar"
+  ],
+  "author": "Graham Billington",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gbillington1/Notion-GCal-Integration/issues"
+  },
+  "homepage": "https://github.com/Gbillington1/Notion-GCal-Integration#readme",
+  "dependencies": {
+    "@notionhq/client": "^2.1.1",
+    "dotenv": "^16.0.2"
+  }
+}
