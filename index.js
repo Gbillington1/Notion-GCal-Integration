@@ -33,7 +33,7 @@ async function getActiveDeadlines() {
                         select: {
                             equals: "Deadlines"
                         }
-                    }
+                    },
                 ]
             }
         })
@@ -46,6 +46,13 @@ async function getActiveDeadlines() {
 // print all deadlines that are "To Do" or "In Progress" to console
 ;(async () => {
     const deadlines = await getActiveDeadlines();
-    console.log(deadlines.results)
+
+    let deadlinesNoTime = deadlines.results.map(deadline => {
+        if (!deadline.properties.Date.date.start.includes('T')) {
+            return deadline
+        }
+    })
+
+    console.log(deadlinesNoTime)
 })();
 
