@@ -5,9 +5,9 @@ const notion = new Client({
     auth: process.env.NOTION_INTEGRATION_TOKEN,
 });
 
+// get all deadlines from task db where `Status` is "To Do" OR "In Progress" AND `Database` is "Deadlines"
 async function getActiveDeadlines() {
     try {
-        // get all deadlines from task db where `Status` is "To Do" OR "In Progress" AND `Database` is "Deadlines"
         const response = await notion.databases.query({
             database_id: process.env.NOTION_TASK_DB_ID,
             filter: {
@@ -76,5 +76,6 @@ async function getProjectName(id) {
     // TODO: ensure that project_title matches event title in Google Calendar
     // TODO: Make classes for Notion and Google Calendar to separate functions and logic
     // TODO: use deadlinesNoTime data to query google clanedar for class periods on that day. Return time that class starts
+    // TODO: proper error handling & logging
 })();
 
