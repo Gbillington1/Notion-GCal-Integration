@@ -74,6 +74,7 @@ async function getProjectName(id) {
     console.log(deadlinesNoTime)
 
     // TODO: ensure that project_title matches event title in Google Calendar
+    // TODO: Make classes for Notion and Google Calendar to separate functions and logic
     // TODO: use deadlinesNoTime data to query google clanedar for class periods on that day. Return time that class starts
 })();
 
